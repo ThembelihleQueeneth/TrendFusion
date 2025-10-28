@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TrendFusion Dashboard — Crypto Tracker</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <header>
+    <h1>💸 TrendFusion — Crypto Dashboard</h1>
+    <nav>
+      <a href="index.html" class="btn">Home</a>
+      <button id="logout" class="btn">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <h2>Live Cryptocurrency Prices (CoinGecko API)</h2>
+      <input type="text" id="search" placeholder="Search coin..." />
+      <div class="grid" id="cryptoGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Data from <a href="https://www.coingecko.com/" target="_blank">CoinGecko API</a></small>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

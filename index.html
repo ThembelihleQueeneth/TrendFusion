@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TrendFusion — Design Trend Showcase</title>
+  <meta name="description" content="TrendFusion: Parallax, Bento grid, gradients, 3D transforms & REST Countries demo built with HTML, CSS & JS." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand"><div class="logo">TF</div><div>TrendFusion</div></div>
+    <nav>
+      <button class="btn" id="open-login">Login</button>
+      <button class="btn" id="go-dashboard">Dashboard</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="layers"><div class="layer layer-1"></div></div>
+      <div class="content">
+        <div class="hero-text">
+          <h1>TrendFusion — design trends, in one page</h1>
+          <p>Parallax movement, Bento grid, hyper-gradients, 3D stickers, horizontal scrolling galleries — built with plain HTML, CSS and JS.</p>
+          <div class="cta">
+            <button class="btn" id="try-login">Try demo login</button>
+            <button class="btn" id="scroll-to-trends">See trends</button>
+          </div>
+        </div>
+        <div class="hero-stickers">
+          <div class="sticker">👾</div>
+          <div class="sticker" style="transform:rotateX(18deg) rotateY(18deg) translateZ(10px)">✨</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bento" id="trends">
+      <div class="big">
+        <h2>Bento Showcase</h2>
+        <p>A flexible bento grid mixing large and small tiles — perfect for spotlight pieces or features.</p>
+      </div>
+      <div class="med">Horizontal scroll</div>
+      <div class="med">3D sticker</div>
+      <div class="med">Parallax layer</div>
+      <div class="med">Gen Z style</div>
+    </section>
+
+    <section class="h-scroll" aria-label="Featured gallery">
+      <div class="card"><h3>Parallax Tile</h3><p>Use transform on scroll for depth.</p></div>
+      <div class="card"><h3>Video Clip</h3><p>Replace with your MP4 or webm for background clips.</p></div>
+      <div class="card"><h3>Sticker</h3><p>Bold typography + layered stickers.</p></div>
+      <div class="card"><h3>3D</h3><p>CSS transforms create depth without WebGL.</p></div>
+    </section>
+
+    <section id="dashboard">
+      <div class="dash-wrap">
+        <h2>Dashboard — CoinGecko Integration Coming Soon 🪙</h2>
+        <p style="opacity:0.9">In the next step we’ll fetch live crypto data and render it here.</p>
+        <div id="status"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-card">
+      <h3>Demo Login</h3>
+      <p>Enter any username to simulate authentication.</p>
+      <input type="text" id="user" placeholder="Username" />
+      <div class="modal-actions">
+        <button class="btn" id="cancel-login">Cancel</button>
+        <button class="btn" id="do-login">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <small>Built with plain HTML, CSS & JS — TrendFusion demo.</small>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
